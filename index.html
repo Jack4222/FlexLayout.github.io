@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Temp</title>
+</head>
+<body>
+    <style>
+        .master{
+            display:flex;
+            flex-flow:row wrap;
+            justify-content: space-evenly;
+
+        }
+        .one{
+            display:flex;
+            background-color: white;
+            justify-content: space-between;
+            flex-flow:column wrap;
+            height: 800px;
+            width: 360px;
+        }
+        .one>div{
+            background-color: aqua;
+            width: 355px;
+            margin:5px;
+        }
+        .two{
+            display: flex;
+            background-color: white;
+            flex-flow:column wrap;
+            justify-content: space-between;
+            height: 800px;
+            width: 360px;
+        }
+        .two>div{
+            background-color: aqua;
+            margin:5px;
+            
+        }
+        .three{
+            display: flex;
+            background-color: white;
+            flex-flow:column wrap;
+            justify-content: space-between;
+            height: 800px;
+            width: 355px;
+        }
+        .three>div{
+            background-color: aqua;
+            margin:5px;
+        }
+        .four{
+            display: flex;
+            background-color: white;
+            flex-flow:column wrap;
+            justify-content: space-between;
+            height: 800px;
+            width: 355px;
+        }
+        .four>div{
+            background-color: aqua;
+            margin:5px;
+        }
+    </style>
+    <div class="master">
+        <div class="one" >
+            <div style="flex-grow: 3">1</div>
+            <div style="flex-grow: 1">2</div>
+            
+        </div>
+        <div class="two">
+            <div style="flex-grow: 2">3</div>
+            <div style="flex-grow: 3">4</div>
+        </div> 
+        <div class="three">
+            <div style="flex-grow: 2">5</div>
+            <div style="flex-grow: 2">6</div>
+            <div style="flex-grow: 1">7</div>
+        </div>
+        <div class="four">
+            <div style="flex-grow: 2">8</div>
+            <div style="flex-grow: 1">9</div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
